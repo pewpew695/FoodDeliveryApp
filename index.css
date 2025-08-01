@@ -74,3 +74,17 @@ h3 {
   margin: 5px;
   cursor: pointer;
 }
+
+/* Shimmer Cards*/
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
