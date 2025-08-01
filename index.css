@@ -28,6 +28,13 @@
   margin: 10px;
 }
 
+/* Login Button */
+
+.login {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
 /* Body*/
 
 /* Search Bar */
@@ -35,7 +42,9 @@
 .search {
   padding: 10px;
 }
-
+.filter {
+  display: flex;
+}
 /* Restaurant Container */
 
 .res-container {
