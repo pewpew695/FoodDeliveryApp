@@ -3,7 +3,7 @@ import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
-  console.log(btnNameReact);
+  // console.log(btnNameReact);
   // setbtnNameReact("Logout");
 
   return (
