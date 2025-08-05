@@ -56,12 +56,12 @@
 .res-card {
   padding: 10px;
   width: 200px;
-  /* height: 300px; */
-
-  background-color: lightgrey;
+  height: 370px;
+  background-color: #f0f0f0;
 }
 
 .res-logo {
+  height: 40%;
   width: 100%;
 }
 
