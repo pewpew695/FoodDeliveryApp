@@ -6,8 +6,8 @@ import { MENU_API } from "../utils/constants";
 const RestaurantMenu = () => {
   const [resInfo, setresInfo] = useState(null);
   const { resId } = useParams();
-  console.log(useParams());
-  console.log(resId);
+  // console.log(useParams());
+  // console.log(resId);
   useEffect(() => {
     fetchMenu();
   }, []);
@@ -28,9 +28,12 @@ const RestaurantMenu = () => {
     //     ?.card
     // );
     const { itemCards } =
-      resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
+      resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
         ?.card;
-    // console.log(itemCards);
+    console.log(
+      resInfo?.cards[4].groupedCard?.cardGroupMap.REGULAR?.cards[2].card.card
+    );
+    console.log(itemCards);
     return (
       <div className="menu">
         <h1>{name}</h1>
