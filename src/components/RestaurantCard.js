@@ -4,7 +4,7 @@ import UserContext from "../utils/UserContext";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
-  // console.log("Hello");
+  console.log(resData);
   const { loggedInUser } = useContext(UserContext);
 
   const { name, cloudinaryImageId, cuisines, costForTwo, sla, avgRating } =
@@ -31,8 +31,8 @@ const RestaurantCard = (props) => {
 
 export const withPromotedLabel = (RestaurantCard) => {
   return (props) => {
-    console.log("Promoted");
-    console.log(props);
+    // console.log("Promoted");
+    // console.log(props);
     return (
       <div>
         <label className="absolute m-2 p-2 bg-black text-white rounded-lg">

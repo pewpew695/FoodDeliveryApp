@@ -23,7 +23,7 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     // console.log(
     //   json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     // );
@@ -33,8 +33,8 @@ const Body = () => {
     setfilteredRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    console.log("start");
-    console.log(listOfRestaurants);
+    // console.log("start");
+    // console.log(listOfRestaurants);
   };
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false) {
@@ -83,7 +83,7 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurant/" + restaurant.info.id}
           >
-            {console.log(restaurant.info)}
+            {/* {console.log(restaurant.info)} */}
             {restaurant.info.avgRating > 4.2 ? (
               <RestaurantCardPromoted resData={restaurant} />
             ) : (
